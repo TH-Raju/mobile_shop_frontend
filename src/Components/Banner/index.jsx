@@ -15,7 +15,9 @@ const Banner = () => {
   const { data: allMobiles, refetch } = useQuery({
     queryKey: ["mobiles"],
     queryFn: async () => {
-      const res = await fetch("http://localhost:5000/api/v1/mobile");
+      const res = await fetch(
+        "https://mobile-shop-i004owzzq-th-raju.vercel.app/api/v1/mobile"
+      );
       const data = await res.json();
 
       return data?.data;

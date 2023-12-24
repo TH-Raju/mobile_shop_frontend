@@ -7,7 +7,8 @@ const StartupModal = ({ startup, id }) => {
   const navigate = useNavigate();
   const onSubmit = (data) => {
     console.log(data);
-    const url = "http://localhost:5000/api/v1/order/add";
+    const url =
+      "https://mobile-shop-i004owzzq-th-raju.vercel.app/api/v1/order/add";
     fetch(url, {
       method: "POST",
       headers: {

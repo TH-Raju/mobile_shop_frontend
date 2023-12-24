@@ -21,7 +21,7 @@ const Signup = () => {
   }
   const onSubmit = async (data) => {
     // console.log(data);
-    fetch("http://localhost:5000/api/v1/signup", {
+    fetch("https://mobile-shop-i004owzzq-th-raju.vercel.app/api/v1/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

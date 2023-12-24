@@ -13,7 +13,9 @@ const AllMobile = () => {
     queryKey: ["categoriyy"],
     queryFn: async () => {
       setLoad(true);
-      const res = await fetch("http://localhost:5000/api/v1/mobile");
+      const res = await fetch(
+        "https://mobile-shop-i004owzzq-th-raju.vercel.app/api/v1/mobile"
+      );
       const data = await res.json();
       if (data) {
         setLoad(false);
@@ -73,8 +75,9 @@ const AllMobile = () => {
 
   return (
     <div className="mb-10">
-      
-      <marquee>This Site is Not Properly Completed. Working is going on... </marquee>
+      <marquee>
+        This Site is Not Properly Completed. Working is going on...{" "}
+      </marquee>
       <div className="my-4">
         <span className="font-bold ml-4">Filter Mobile :</span>
         <select

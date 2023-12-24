@@ -35,7 +35,7 @@ export const router = createBrowserRouter([
         path: "/search/:searchTerm",
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5000/api/v1/mobile/search?searchTerm=${params.searchTerm}`
+            `https://mobile-shop-i004owzzq-th-raju.vercel.app/api/v1/mobile/search?searchTerm=${params.searchTerm}`
           ),
         element: <Search />,
       },

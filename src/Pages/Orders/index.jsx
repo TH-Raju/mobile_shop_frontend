@@ -8,7 +8,9 @@ const Orders = () => {
     queryKey: ["categoriyy"],
     queryFn: async () => {
       setLoad(true);
-      const res = await fetch("http://localhost:5000/api/v1/order");
+      const res = await fetch(
+        "https://mobile-shop-i004owzzq-th-raju.vercel.app/api/v1/order"
+      );
       const data = await res.json();
       if (data) {
         setLoad(false);

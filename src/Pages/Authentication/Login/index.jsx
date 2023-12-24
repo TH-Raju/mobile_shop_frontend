@@ -21,7 +21,7 @@ const Login = () => {
   const onSubmit = async (data) => {
     // console.log(data);
     // setLoading(true);
-    fetch("http://localhost:5000/api/v1/login", {
+    fetch("https://mobile-shop-i004owzzq-th-raju.vercel.app/api/v1/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
